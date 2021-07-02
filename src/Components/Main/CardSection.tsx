@@ -13,19 +13,19 @@ const CardSection: React.FC<Props> = (props) => {
 			<div className=" bg-primary-100 pt-12">
 				<H1>Get your favorites for free</H1>
 				<div className="flex justify-around items-start text-center mt-4">
-					<TabHeading addOnAttributes="w-full">
+					<TabHeading className="w-full">
 						25<span className=" text-gray-500">&#9733;</span>
 					</TabHeading>
-					<TabHeading addOnAttributes="w-full">
+					<TabHeading className="w-full">
 						50<span className=" text-gray-500">&#9733;</span>
 					</TabHeading>
-					<TabHeading addOnAttributes="w-full border-b-4 pb-4 border-primary-300">
+					<TabHeading className="w-full border-b-4 pb-4 border-primary-300">
 						100<span className=" text-gray-500">&#9733;</span>
 					</TabHeading>
-					<TabHeading addOnAttributes="w-full">
+					<TabHeading className="w-full">
 						200<span className=" text-gray-500">&#9733;</span>
 					</TabHeading>
-					<TabHeading addOnAttributes="w-full">
+					<TabHeading className="w-full">
 						400<span className=" text-gray-500">&#9733;</span>
 					</TabHeading>
 				</div>
@@ -34,7 +34,7 @@ const CardSection: React.FC<Props> = (props) => {
 				<img src={img150} alt=""></img>
 				<div className="mt-4 px-4">
 					<H2>Handcrafted drink, hot breakfast or parfait</H2>
-					<P addOnAtrributes="mt-4">
+					<P className="mt-4">
 						Have a really good morning with a breakfast sandwich, oatmeal or
 						your favorite drink.
 					</P>

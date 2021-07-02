@@ -1,19 +1,19 @@
 import React from "react";
 
 interface Props {
-	addOnAttributes?: string;
+	className?: string;
 }
 
 const H2: React.FC<Props> = (props) => {
 	return (
-		<h2 className={"font-semibold text-lg " + props.addOnAttributes}>
+		<h2 className={"font-semibold text-lg " + props.className}>
 			{props.children}
 		</h2>
 	);
 };
 
 H2.defaultProps = {
-	addOnAttributes: "",
+	className: "",
 };
 
 export default H2;

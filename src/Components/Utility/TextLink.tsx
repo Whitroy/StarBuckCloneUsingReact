@@ -2,7 +2,7 @@ import React, { AnchorHTMLAttributes } from "react";
 
 interface Props extends AnchorHTMLAttributes<HTMLAnchorElement> {
 	textColor?: "Green" | "black";
-	addOnAttributes?: string;
+	className?: string;
 }
 
 const TextLink: React.FC<Props> = (props) => {
@@ -11,9 +11,7 @@ const TextLink: React.FC<Props> = (props) => {
 	return (
 		<a
 			{...props}
-			className={
-				color + " hover:no-underline underline " + props.addOnAttributes
-			}
+			className={color + " hover:no-underline underline " + props.className}
 		>
 			{props.children}
 		</a>
@@ -22,7 +20,7 @@ const TextLink: React.FC<Props> = (props) => {
 
 TextLink.defaultProps = {
 	textColor: "black",
-	addOnAttributes: "",
+	className: "",
 };
 
 export default TextLink;

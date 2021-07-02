@@ -3,6 +3,9 @@ import H1 from "../Utility/H1";
 import P from "../Utility/P";
 import InfoBlock from "../Utility/InfoBlock";
 import TextLink from "../Utility/TextLink";
+import FunFrebies from "../../Img/Fun-freebies.png";
+import GetFree from "../../Img/get-to-free-faster.png";
+import OrderPay from "../../Img/order-and-pay-ahead.png";
 
 interface Props {
 	title: string;
@@ -12,29 +15,34 @@ interface Props {
 const ImgSection: React.FC<Props> = (props) => {
 	return (
 		<section className="my-20 px-2">
-			<H1 addOnAtrributes="text-center">{props.title}</H1>
-			<P addOnAtrributes="mt-5 text-center">{props.desc}</P>
-			<InfoBlock step={1} type="Img" title="Download the Starbucks&reg; app">
-				<TextLink textColor="Green" href="#">
-					Join in the app{" "}
-				</TextLink>{" "}
-				to get access to the full range of Starbucks&reg; Rewards benefits. You
-				can also
-				<TextLink textColor="Green" href="#">
-					{" "}
-					join online.
+			<H1 className="text-center">{props.title}</H1>
+			<P className="mt-5 text-center">{props.desc}</P>
+			<InfoBlock step={FunFrebies} type="Img" title="Fun freebies">
+				<P>
+					Not only can you earn free coffee, look forward to a birthday treat
+					plus coffee and tea refills.
+				</P>
+				<TextLink textColor="Green" href="#" className="block mt-4">
+					Learn More
 				</TextLink>
 			</InfoBlock>
-			<InfoBlock step={2} type="Img" title="Download the Starbucks&reg; app">
-				Use cash, credit/debit card or save some time and pay right through the
-				app. You’ll collect Stars all ways.{" "}
-				<TextLink textColor="Green" href="#">
-					Learn more{" "}
+			<InfoBlock step={OrderPay} type="Img" title="Order & pay ahead">
+				<P>
+					Enjoy the convenience of in-store, curbside or drive-thru pickup at
+					select stores.
+				</P>
+				<TextLink textColor="Green" href="#" className="block mt-4">
+					Learn More
 				</TextLink>
 			</InfoBlock>
-			<InfoBlock step={3} type="Img" title="Earn Stars, get Rewards">
-				As you earn Stars, you can redeem them for Rewards—like free food,
-				drinks, and more. Start redeeming with as little as 25 Stars!
+			<InfoBlock step={GetFree} type="Img" title="Get to free faster">
+				<P>
+					Earn Stars even quicker with Bonus Star challenges, Double Star Days
+					and exciting games.
+				</P>
+				<TextLink textColor="Green" href="#" className="block mt-4">
+					Learn More
+				</TextLink>
 			</InfoBlock>
 		</section>
 	);

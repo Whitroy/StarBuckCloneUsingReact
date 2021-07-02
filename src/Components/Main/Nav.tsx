@@ -1,11 +1,12 @@
 import React from "react";
-
+import HoverLink from "../Utility/HoverLink";
+import RoundLink from "../Utility/RoundLink";
 interface Props {}
 
 const Nav: React.FC<Props> = (props) => {
 	return (
-		<nav className="flex  justify-between items-center p-4">
-			<div className="w-10 h-10">
+		<nav className="flex justify-between items-center p-4 md:px-6 md:py-0 md:justify-start">
+			<div className="w-10 h-10 md:w-12 md:h-12">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					width="100%"
@@ -23,7 +24,7 @@ const Nav: React.FC<Props> = (props) => {
 					</g>
 				</svg>
 			</div>
-			<div className="w-6 h-6">
+			<div className="w-6 h-6 md:hidden">
 				<svg
 					viewBox="0 0 24 24"
 					preserveAspectRatio="xMidYMid meet"
@@ -36,6 +37,46 @@ const Nav: React.FC<Props> = (props) => {
 					<path d="M21,18.9H3c-0.5,0-0.9-0.4-0.9-0.9s0.4-0.9,0.9-0.9h18c0.5,0,0.9,0.4,0.9,0.9S21.5,18.9,21,18.9z"></path>
 					<circle fill="transparent" cx="50%" cy="50%" r="75%"></circle>
 				</svg>
+			</div>
+			<div className="md:flex hidden md:justify-between md:items-center border-2">
+				<div className="flex justify-center items-start pt-8">
+					<HoverLink href="#" className="ml-4">
+						MENU
+					</HoverLink>
+					<HoverLink
+						href="#"
+						className="ml-4 border-b-4 border-primary-300 h-12"
+					>
+						REWARDS
+					</HoverLink>
+					<HoverLink href="#" className="ml-4">
+						GIFT CARDS
+					</HoverLink>
+				</div>
+				<div className="flex justify-center items-center">
+					<HoverLink href="#">
+						<svg
+							viewBox="0 0 24 24"
+							preserveAspectRatio="xMidYMid meet"
+							aria-hidden="true"
+							focusable="false"
+							className=" w-8 h-8 overflow-visible fill-current inline-block"
+						>
+							<path d="M12,11.475 C10.5214286,11.475 9.32142857,10.299 9.32142857,8.85 C9.32142857,7.401 10.5214286,6.225 12,6.225 C13.4785714,6.225 14.6785714,7.401 14.6785714,8.85 C14.6785714,10.299 13.4785714,11.475 12,11.475 M12,1.5 C7.85357143,1.5 4.5,4.7865 4.5,8.85 C4.5,14.3625 12,22.5 12,22.5 C12,22.5 19.5,14.3625 19.5,8.85 C19.5,4.7865 16.1464286,1.5 12,1.5"></path>
+						</svg>
+						Find a store
+					</HoverLink>
+					<RoundLink href="#" className="ml-4 hover:bg-gray-100">
+						Sign in
+					</RoundLink>
+					<RoundLink
+						href="#"
+						fill_Color="Black"
+						className="ml-4 hover:bg-gray-700"
+					>
+						Join now
+					</RoundLink>
+				</div>
 			</div>
 		</nav>
 	);

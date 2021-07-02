@@ -11,7 +11,9 @@ interface Props {
 const InfoBlock: React.FC<Props> = (props) => {
 	let blockStart: any;
 	if (props.type === "Img") {
-		blockStart = <img></img>;
+		blockStart = (
+			<img className=" w-28 h-28" src={props.step as string} alt="" />
+		);
 	} else {
 		blockStart = (
 			<h2 className=" rounded-full text-center text-primary-300 border-primary-300 border-2.5 inline py-2 px-4 font-semibold text-xl">
@@ -21,11 +23,11 @@ const InfoBlock: React.FC<Props> = (props) => {
 	}
 
 	return (
-		<div className="flex items-start justify-between p-2 mt-4">
+		<div className="flex items-start justify-start p-2 mt-4">
 			{blockStart}
 			<div className="flex flex-col items-start mx-4 ">
 				<H2>{props.title}</H2>
-				<P addOnAtrributes="mt-3">{props.children}</P>
+				<P className="mt-3">{props.children}</P>
 			</div>
 		</div>
 	);

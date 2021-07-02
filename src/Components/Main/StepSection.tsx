@@ -12,8 +12,8 @@ interface Props {
 const StepSection: React.FC<Props> = (props) => {
 	return (
 		<section className="my-20">
-			<H1 addOnAtrributes="text-center">{props.title}</H1>
-			<P addOnAtrributes="mt-5 text-center">{props.desc}</P>
+			<H1 className="text-center">{props.title}</H1>
+			<P className="mt-5 text-center">{props.desc}</P>
 			<InfoBlock step={1} type="number" title="Download the Starbucks&reg; app">
 				<TextLink textColor="Green" href="#">
 					Join in the app{" "}
