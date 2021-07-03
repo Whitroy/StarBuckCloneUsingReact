@@ -27,9 +27,13 @@ module.exports = {
     extend: {
       backgroundImage: theme => ({
         'mobile-hero': "url('./Img/mobile_Hero.webp')",
+        'desktop-hero': "url('./Img/desktop_Hero.webp')",
       }),
       borderWidth: {
         '2.5': '2.5px',
+      },
+      backgroundPosition: {
+        'right-40':'40% 0%',
       },
     },
   },

@@ -6,7 +6,11 @@ interface Props {
 
 const H1: React.FC<Props> = (props) => {
 	return (
-		<h1 className={" font-semibold text-center text-2xl " + props.className}>
+		<h1
+			className={
+				" font-semibold text-center text-2xl md:text-3xl " + props.className
+			}
+		>
 			{props.children}
 		</h1>
 	);

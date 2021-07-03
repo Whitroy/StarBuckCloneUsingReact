@@ -1,7 +1,7 @@
 import React, { AnchorHTMLAttributes } from "react";
 
 interface Props extends AnchorHTMLAttributes<HTMLAnchorElement> {
-	fill_Color?: "Green" | "Black" | "None";
+	fill_Color?: "Green" | "Black" | "White" | "None";
 	className?: string;
 }
 
@@ -11,7 +11,9 @@ const RoundLink: React.FC<Props> = (props) => {
 			? "bg-primary-300 text-white"
 			: props.fill_Color === "Black"
 			? "bg-black text-white"
-			: "font-bold border border-black text-black";
+			: props.fill_Color === "White"
+			? "text-white font-bold border border-white"
+			: "font-bold border border-black";
 	return (
 		<a
 			{...props}

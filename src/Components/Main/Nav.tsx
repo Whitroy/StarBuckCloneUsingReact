@@ -5,8 +5,8 @@ interface Props {}
 
 const Nav: React.FC<Props> = (props) => {
 	return (
-		<nav className="flex justify-between items-center p-4 md:px-6 md:py-0 md:justify-start">
-			<div className="w-10 h-10 md:w-12 md:h-12">
+		<nav className="flex justify-between items-center p-4 md:px-8 md:pb-0 md:pt-2 md:justify-start">
+			<div className="w-10 h-10 md:w-14 md:h-14">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					width="100%"
@@ -38,14 +38,14 @@ const Nav: React.FC<Props> = (props) => {
 					<circle fill="transparent" cx="50%" cy="50%" r="75%"></circle>
 				</svg>
 			</div>
-			<div className="md:flex hidden md:justify-between md:items-center border-2">
+			<div className="hidden md:flex md:justify-between md:w-full md:items-center">
 				<div className="flex justify-center items-start pt-8">
 					<HoverLink href="#" className="ml-4">
 						MENU
 					</HoverLink>
 					<HoverLink
 						href="#"
-						className="ml-4 border-b-4 border-primary-300 h-12"
+						className="ml-4 border-b-8 border-primary-300 h-14"
 					>
 						REWARDS
 					</HoverLink>
@@ -54,7 +54,7 @@ const Nav: React.FC<Props> = (props) => {
 					</HoverLink>
 				</div>
 				<div className="flex justify-center items-center">
-					<HoverLink href="#">
+					<HoverLink href="#" className=" text-sm">
 						<svg
 							viewBox="0 0 24 24"
 							preserveAspectRatio="xMidYMid meet"
@@ -66,13 +66,13 @@ const Nav: React.FC<Props> = (props) => {
 						</svg>
 						Find a store
 					</HoverLink>
-					<RoundLink href="#" className="ml-4 hover:bg-gray-100">
+					<RoundLink href="#" className="ml-12 hover:bg-gray-100 px-4">
 						Sign in
 					</RoundLink>
 					<RoundLink
 						href="#"
 						fill_Color="Black"
-						className="ml-4 hover:bg-gray-700"
+						className="ml-4 hover:bg-gray-700 "
 					>
 						Join now
 					</RoundLink>

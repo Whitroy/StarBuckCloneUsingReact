@@ -23,11 +23,11 @@ const InfoBlock: React.FC<Props> = (props) => {
 	}
 
 	return (
-		<div className="flex items-start justify-start p-2 mt-4">
+		<div className="flex items-start justify-start p-2 mt-4 md:flex-col md:items-center md:p-6">
 			{blockStart}
-			<div className="flex flex-col items-start mx-4 ">
-				<H2>{props.title}</H2>
-				<P className="mt-3">{props.children}</P>
+			<div className="flex flex-col items-start mx-4 md:mt-6 md:items-center ">
+				<H2 className=" md:text-center">{props.title}</H2>
+				<P className="mt-3 md:text-center md:mt-5">{props.children}</P>
 			</div>
 		</div>
 	);
