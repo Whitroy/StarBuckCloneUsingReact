@@ -1,12 +1,12 @@
 import React, { AnchorHTMLAttributes } from "react";
 
 interface Props extends AnchorHTMLAttributes<HTMLAnchorElement> {
-	textColor?: "Green" | "black";
+	color?: "Green" | "black";
 	className?: string;
 }
 
 const TextLink: React.FC<Props> = (props) => {
-	const color = props.textColor === "Green" ? "text-primary-300" : "text-black";
+	const color = props.color === "Green" ? "text-primary-300" : "text-black";
 
 	return (
 		<a
@@ -19,7 +19,7 @@ const TextLink: React.FC<Props> = (props) => {
 };
 
 TextLink.defaultProps = {
-	textColor: "black",
+	color: "black",
 	className: "",
 };
 

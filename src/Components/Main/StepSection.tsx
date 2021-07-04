@@ -19,12 +19,12 @@ const StepSection: React.FC<Props> = (props) => {
 			<div className="md:flex md:justify-around md:items-start md:mt-5 md:px-8">
 				<InfoBlock step={1} type="number" title="Create an account">
 					To get started,{" "}
-					<TextLink textColor="Green" href="#">
+					<TextLink color="Green" href="#">
 						Join now{" "}
 					</TextLink>
 					{"."}
 					You can also{" "}
-					<TextLink textColor="Green" href="#">
+					<TextLink color="Green" href="#">
 						join in the app
 					</TextLink>{" "}
 					to get access to the full range of Starbucks&reg; Rewards benefits.
@@ -32,7 +32,7 @@ const StepSection: React.FC<Props> = (props) => {
 				<InfoBlock step={2} type="number" title="Order and pay how you’d like">
 					Use cash, credit/debit card or save some time and pay right through
 					the app. You’ll collect Stars all ways.{" "}
-					<TextLink textColor="Green" href="#">
+					<TextLink color="Green" href="#">
 						Learn how{" "}
 					</TextLink>
 				</InfoBlock>

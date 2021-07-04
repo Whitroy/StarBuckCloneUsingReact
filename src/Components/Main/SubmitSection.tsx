@@ -8,7 +8,7 @@ interface Props {}
 
 const SubmitSection: React.FC<Props> = (props) => {
 	return (
-		<section className="my-20 md:my-28 px-8">
+		<section className="my-20 md:my-28 px-6">
 			<div className="max-w-xl m-auto">
 				<H1 center={false} className="text-left">
 					Star Codes
@@ -35,15 +35,15 @@ const SubmitSection: React.FC<Props> = (props) => {
 				<P className="mt-5">Have a receipt but don't have a code?</P>
 				<P>
 					Go to{" "}
-					<TextLink href="#" textColor="Green">
+					<TextLink href="#" color="Green">
 						starbucks-stars.com
 					</TextLink>{" "}
 					to upload your receipt and collect your Stars.
 				</P>
-				<Content title="Question?" className="mt-24" paraSmallTextSize={true}>
+				<Content title="Question?" className="mt-24">
 					We want to help in any way we can. You can ask your barista anytime or
 					we’ve answered the most commonly asked questions{" "}
-					<TextLink textColor="Green" href="#">
+					<TextLink color="Green" href="#">
 						right over here
 					</TextLink>
 					.

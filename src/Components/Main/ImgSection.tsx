@@ -25,7 +25,7 @@ const ImgSection: React.FC<Props> = (props) => {
 						Not only can you earn free coffee, look forward to a birthday treat
 						plus coffee and tea refills.
 					</P>
-					<TextLink textColor="Green" href="#" className="block mt-4">
+					<TextLink color="Green" href="#" className="block mt-4">
 						Learn More
 					</TextLink>
 				</InfoBlock>
@@ -34,7 +34,7 @@ const ImgSection: React.FC<Props> = (props) => {
 						Enjoy the convenience of in-store, curbside or drive-thru pickup at
 						select stores.
 					</P>
-					<TextLink textColor="Green" href="#" className="block mt-4">
+					<TextLink color="Green" href="#" className="block mt-4">
 						Learn More
 					</TextLink>
 				</InfoBlock>
@@ -43,7 +43,7 @@ const ImgSection: React.FC<Props> = (props) => {
 						Earn Stars even quicker with Bonus Star challenges, Double Star Days
 						and exciting games.
 					</P>
-					<TextLink textColor="Green" href="#" className="block mt-4">
+					<TextLink color="Green" href="#" className="block mt-4">
 						Learn More
 					</TextLink>
 				</InfoBlock>

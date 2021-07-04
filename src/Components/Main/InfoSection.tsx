@@ -83,7 +83,7 @@ const InfoSection: React.FC<Props> = (props) => {
 							className="mt-5"
 						>
 							Earn Stars on all purchases you make with our{" "}
-							<TextLink textColor="Green" href="#">
+							<TextLink color="Green" href="#">
 								credit card
 							</TextLink>{" "}
 							in and outside of Starbucks. Earn 1 Star per $1 when you digitally

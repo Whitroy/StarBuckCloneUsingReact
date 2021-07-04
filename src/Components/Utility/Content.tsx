@@ -4,18 +4,24 @@ import P from "../Utility/P";
 
 interface Props {
 	title: string;
-	color?: "Silver" | "Black";
+	color?: "Silver" | "Black" | "Gray";
 	className?: string;
-	paraSmallTextSize?: boolean;
+	paraLargeTextSize?: boolean;
 }
 
 const Content: React.FC<Props> = (props) => {
-	const color = props.color === "Silver" ? "text-gray-400" : "";
-
+	const color =
+		props.color === "Silver"
+			? "text-gray-400"
+			: props.color === "Gray"
+			? "text-gray-500"
+			: "";
 	return (
 		<div className={props.className}>
 			<H2 className={color}>{props.title}</H2>
-			<P className="mt-1 md:mt-4 ">{props.children}</P>
+			<P className="mt-1 md:mt-4 " LargeTextOnMedium={props.paraLargeTextSize}>
+				{props.children}
+			</P>
 		</div>
 	);
 };
@@ -23,7 +29,7 @@ const Content: React.FC<Props> = (props) => {
 Content.defaultProps = {
 	color: "Black",
 	className: "",
-	paraSmallTextSize: false,
+	paraLargeTextSize: false,
 };
 
 export default Content;

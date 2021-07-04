@@ -71,7 +71,7 @@ const Nav: React.FC<Props> = (props) => {
 					</RoundLink>
 					<RoundLink
 						href="#"
-						fill_Color="Black"
+						color="Black"
 						className="ml-4 hover:bg-gray-700 "
 					>
 						Join now

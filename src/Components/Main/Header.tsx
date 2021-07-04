@@ -11,7 +11,7 @@ const Header: React.FC<Props> = (props) => {
 			</P>
 			<RoundLink
 				href="#"
-				fill_Color="White"
+				color="White"
 				className="hover:bg-gray-500 flex-shrink-0 md:hidden visible"
 			>
 				Join in the app

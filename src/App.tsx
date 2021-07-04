@@ -6,6 +6,8 @@ import CardSection from "./Components/Main/CardSection";
 import ImgSection from "./Components/Main/ImgSection";
 import InfoSection from "./Components/Main/InfoSection";
 import SubmitSection from "./Components/Main/SubmitSection";
+import TermAndCondSection from "./Components/Main/TermAndCondSection";
+import LinkSection from "./Components/Main/LinkSection";
 
 function App() {
 	return (
@@ -27,6 +29,8 @@ function App() {
 				desc="No matter how you pay, you can earn Stars with your morning coffee. Those Stars add up to (really delicious) Rewards."
 			/>
 			<SubmitSection />
+			<TermAndCondSection />
+			<LinkSection />
 		</div>
 	);
 }

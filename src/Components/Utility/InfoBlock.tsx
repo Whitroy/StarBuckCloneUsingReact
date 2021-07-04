@@ -28,7 +28,7 @@ const InfoBlock: React.FC<Props> = (props) => {
 				<Content
 					title={props.title}
 					className="md:mt-5 "
-					paraSmallTextSize={true}
+					paraLargeTextSize={true}
 				>
 					{props.children}
 				</Content>

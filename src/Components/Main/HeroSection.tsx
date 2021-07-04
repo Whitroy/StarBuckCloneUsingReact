@@ -14,7 +14,7 @@ const HeroSection: React.FC<Props> = (props) => {
 				<P LargeTextOnMedium={true} className="mt-5">
 					Join now to start earning Rewards.
 				</P>
-				<RoundLink fill_Color="Green" className="mt-5" href="#">
+				<RoundLink color="Green" className="mt-5" href="#">
 					Join <span className="hidden md:inline">now</span>{" "}
 					<span className="visible md:hidden">in the app</span>
 				</RoundLink>
