@@ -1,6 +1,5 @@
 import React from "react";
-import H2 from "./H2";
-import P from "./P";
+import Content from "./Content";
 
 interface Props {
 	step: number | string;
@@ -25,9 +24,14 @@ const InfoBlock: React.FC<Props> = (props) => {
 	return (
 		<div className="flex items-start justify-start p-2 mt-4 md:flex-col md:items-center md:p-6">
 			{blockStart}
-			<div className="flex flex-col items-start mx-4 md:mt-6 md:items-center ">
-				<H2 className=" md:text-center">{props.title}</H2>
-				<P className="mt-3 md:text-center md:mt-5">{props.children}</P>
+			<div className="flex flex-col items-start mx-4 md:mt-6 md:items-center md:text-center">
+				<Content
+					title={props.title}
+					className="md:mt-5 "
+					paraSmallTextSize={true}
+				>
+					{props.children}
+				</Content>
 			</div>
 		</div>
 	);

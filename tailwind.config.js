@@ -17,7 +17,11 @@ module.exports = {
         '400': '#1e3932'
       },
       
-      secondary: '#f3f1e7'
+      secondary: {
+        100: '#f3f1e7',
+        200: "#ffcc00",
+      },
+      
     },
 
     fontFamily:{

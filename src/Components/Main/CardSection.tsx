@@ -14,19 +14,19 @@ const CardSection: React.FC<Props> = (props) => {
 					<H1>Get your favorites for free</H1>
 					<div className="flex justify-around items-start text-center mt-4 md:mt-12">
 						<TabHeading className="w-full">
-							25<span className=" text-gray-500">&#9733;</span>
+							25<span className=" text-secondary-200">&#9733;</span>
 						</TabHeading>
 						<TabHeading className="w-full">
-							50<span className=" text-gray-500">&#9733;</span>
+							50<span className=" text-secondary-200">&#9733;</span>
 						</TabHeading>
 						<TabHeading className="w-full border-b-4 pb-4 border-primary-300">
-							100<span className=" text-gray-500">&#9733;</span>
+							150<span className=" text-secondary-200">&#9733;</span>
 						</TabHeading>
 						<TabHeading className="w-full">
-							200<span className=" text-gray-500">&#9733;</span>
+							200<span className=" text-secondary-200">&#9733;</span>
 						</TabHeading>
 						<TabHeading className="w-full">
-							400<span className=" text-gray-500">&#9733;</span>
+							400<span className=" text-secondary-200">&#9733;</span>
 						</TabHeading>
 					</div>
 				</div>
@@ -36,7 +36,7 @@ const CardSection: React.FC<Props> = (props) => {
 					<img className="md:max-h-52" src={img150} alt=""></img>
 					<Content
 						title="Handcrafted drink, hot breakfast or parfait"
-						className="mt-4 md:ml-6"
+						className="mt-4 md:ml-6 text-center md:text-left"
 					>
 						Have a really good morning with a breakfast sandwich, oatmeal or
 						your favorite drink.

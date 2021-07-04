@@ -13,7 +13,7 @@ const StepSection: React.FC<Props> = (props) => {
 	return (
 		<section className="my-20 md:my-28 md:px-16">
 			<H1 className="text-center">{props.title}</H1>
-			<P largeTextOnMedium={true} className="mt-5 text-center md:text-center">
+			<P LargeTextOnMedium={true} className="mt-5 text-center md:text-center">
 				{props.desc}
 			</P>
 			<div className="md:flex md:justify-around md:items-start md:mt-5 md:px-8">

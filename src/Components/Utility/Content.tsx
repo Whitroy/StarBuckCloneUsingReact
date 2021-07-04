@@ -6,6 +6,7 @@ interface Props {
 	title: string;
 	color?: "Silver" | "Black";
 	className?: string;
+	paraSmallTextSize?: boolean;
 }
 
 const Content: React.FC<Props> = (props) => {
@@ -13,8 +14,8 @@ const Content: React.FC<Props> = (props) => {
 
 	return (
 		<div className={props.className}>
-			<H2 className={color + " md:text-left"}>{props.title}</H2>
-			<P className="mt-4">{props.children}</P>
+			<H2 className={color}>{props.title}</H2>
+			<P className="mt-1 md:mt-4 ">{props.children}</P>
 		</div>
 	);
 };
@@ -22,6 +23,7 @@ const Content: React.FC<Props> = (props) => {
 Content.defaultProps = {
 	color: "Black",
 	className: "",
+	paraSmallTextSize: false,
 };
 
 export default Content;

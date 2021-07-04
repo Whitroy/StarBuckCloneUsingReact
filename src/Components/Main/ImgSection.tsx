@@ -16,7 +16,9 @@ const ImgSection: React.FC<Props> = (props) => {
 	return (
 		<section className="my-20 px-2 md:my-28 md:px-16">
 			<H1 className="text-center">{props.title}</H1>
-			<P className="mt-5 text-center">{props.desc}</P>
+			<P LargeTextOnMedium={true} className="mt-5 text-center">
+				{props.desc}
+			</P>
 			<div className="md:flex md:justify-around md:items-start md:mt-5 md:px-8">
 				<InfoBlock step={FunFrebies} type="Img" title="Fun freebies">
 					<P>
