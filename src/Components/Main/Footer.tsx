@@ -3,9 +3,9 @@ import ListCard from "../Utility/ListCard";
 
 interface Props {}
 
-const LinkSection: React.FC<Props> = (props) => {
+const Footer: React.FC<Props> = (props) => {
 	return (
-		<section className="lg:p-16 p-4">
+		<footer className="lg:p-16 p-4 border-t-2 shadow-md">
 			<div className="lg:flex lg:justify-between lg:items-start">
 				<ListCard
 					title="About Us"
@@ -182,10 +182,10 @@ const LinkSection: React.FC<Props> = (props) => {
 			<h4 className="text-base ml-3 mt-5 text-gray-500">
 				&#169; 2021 Starbucks Coffee Company. All rights reserved.
 			</h4>
-		</section>
+		</footer>
 	);
 };
 
-LinkSection.defaultProps = {};
+Footer.defaultProps = {};
 
-export default LinkSection;
+export default React.memo(Footer);

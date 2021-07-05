@@ -100,4 +100,4 @@ const InfoSection: React.FC<Props> = (props) => {
 
 InfoSection.defaultProps = {};
 
-export default InfoSection;
+export default React.memo(InfoSection);

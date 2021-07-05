@@ -49,4 +49,4 @@ const CardSection: React.FC<Props> = (props) => {
 
 CardSection.defaultProps = {};
 
-export default CardSection;
+export default React.memo(CardSection);

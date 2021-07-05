@@ -34,4 +34,4 @@ const HeroSection: React.FC<Props> = (props) => {
 
 HeroSection.defaultProps = {};
 
-export default HeroSection;
+export default React.memo(HeroSection);

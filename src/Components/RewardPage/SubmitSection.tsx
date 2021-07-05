@@ -21,7 +21,7 @@ const SubmitSection: React.FC<Props> = (props) => {
 					<input
 						type="text"
 						placeholder="Enter your Star Code"
-						className="p-3 border-2 border-gray-400 rounded-xl w-full"
+						className="p-3 border-2 border-gray-400 rounded-xl w-full focus:outline-none focus:border-primary-300 "
 					></input>
 					<div className="ml-auto w-20">
 						<button
@@ -55,4 +55,4 @@ const SubmitSection: React.FC<Props> = (props) => {
 
 SubmitSection.defaultProps = {};
 
-export default SubmitSection;
+export default React.memo(SubmitSection);

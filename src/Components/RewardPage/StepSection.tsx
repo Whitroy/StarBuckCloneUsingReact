@@ -47,4 +47,4 @@ const StepSection: React.FC<Props> = (props) => {
 
 StepSection.defaultProps = {};
 
-export default StepSection;
+export default React.memo(StepSection);

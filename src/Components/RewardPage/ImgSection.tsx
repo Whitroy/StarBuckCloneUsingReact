@@ -54,4 +54,4 @@ const ImgSection: React.FC<Props> = (props) => {
 
 ImgSection.defaultProps = {};
 
-export default ImgSection;
+export default React.memo(ImgSection);

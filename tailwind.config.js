@@ -37,7 +37,11 @@ module.exports = {
         '2.5': '2.5px',
       },
       backgroundPosition: {
-        'right-40':'40% 0%',
+        'right-40': '40% 0%',
+      },
+
+      inset: {
+        18 : '4.5rem'
       },
     },
   },
