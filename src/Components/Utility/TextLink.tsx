@@ -1,4 +1,5 @@
 import React, { AnchorHTMLAttributes } from "react";
+import { JsxElement } from "typescript";
 
 interface Props extends AnchorHTMLAttributes<HTMLAnchorElement> {
 	color?: "Green" | "black";

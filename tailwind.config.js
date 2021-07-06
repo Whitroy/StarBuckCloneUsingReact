@@ -9,7 +9,8 @@ module.exports = {
       black: color.black,
       white: color.white,
       gray: color.gray,
-      
+      red: color.red,
+
       primary: {
         '100': '#f1f8f6',
         '200': '#d4e9e2',
@@ -41,7 +42,9 @@ module.exports = {
       },
 
       inset: {
-        18 : '4.5rem'
+        18: '4.5rem',
+        "1/20": '5%',
+        "1/10": '10%'
       },
     },
   },
