@@ -41,12 +41,16 @@ const SubmitSection: React.FC<Props> = (props) => {
 					to upload your receipt and collect your Stars.
 				</P>
 				<Content title="Question?" className="mt-24">
-					We want to help in any way we can. You can ask your barista anytime or
-					we’ve answered the most commonly asked questions{" "}
-					<TextLink color="Green" href="#">
-						right over here
-					</TextLink>
-					.
+					{[
+						<span>
+							We want to help in any way we can. You can ask your barista
+							anytime or we’ve answered the most commonly asked questions{" "}
+							<TextLink color="Green" href="#">
+								right over here{" "}
+							</TextLink>
+							.
+						</span>,
+					]}
 				</Content>
 			</div>
 		</section>

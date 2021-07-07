@@ -6,12 +6,14 @@ import InfoSection from "../RewardPage/InfoSection";
 import StepSection from "../RewardPage/StepSection";
 import SubmitSection from "../RewardPage/SubmitSection";
 import TermAndCondSection from "../RewardPage/TermAndCondSection";
+import Header from "./Header";
 
 interface Props {}
 
 const Reward: React.FC<Props> = (props) => {
 	return (
 		<>
+			<Header />
 			<HeroSection />
 			<StepSection
 				title="Getting started is easy"

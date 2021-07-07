@@ -7,6 +7,7 @@ interface Props {
 	color?: "Silver" | "Black" | "Gray";
 	className?: string;
 	paraLargeTextSize?: boolean;
+	children: React.ReactNode[];
 }
 
 const Content: React.FC<Props> = (props) => {
@@ -19,9 +20,17 @@ const Content: React.FC<Props> = (props) => {
 	return (
 		<div className={props.className}>
 			<H2 className={color}>{props.title}</H2>
-			<P className="mt-1 md:mt-4 " LargeTextOnMedium={props.paraLargeTextSize}>
-				{props.children}
-			</P>
+			<div className="mt-1 md:mt-4 ">
+				{props.children.map((value, index) => (
+					<P
+						className="mt-3"
+						LargeTextOnMedium={props.paraLargeTextSize}
+						key={index}
+					>
+						{value}
+					</P>
+				))}
+			</div>
 		</div>
 	);
 };

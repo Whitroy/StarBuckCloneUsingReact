@@ -1,48 +1,87 @@
 import React from "react";
-import H1 from "../Utility/H1";
-import TabHeading from "./TabHeading";
+import img25 from "../../Img/25_TAB_IMAGE.webp";
+import img50 from "../../Img/50_TAB_IMAGE.webp";
 import img150 from "../../Img/150_TAB_IMAGE.webp";
-import Content from "../Utility/Content";
+import img200 from "../../Img/200_TAB_IMAGE.webp";
+import img400 from "../../Img/400_TAB_IMAGE.webp";
+import Tabs from "./Tabs";
+import Tab from "./Tab";
+import TabContent from "./TabContent";
 
 interface Props {}
+
+const tabContent = [
+	{
+		src: img25,
+		title: (
+			<span>
+				25<span className=" text-secondary-200 text-sm">&#9733;</span>
+			</span>
+		),
+		content:
+			"Make your drink just right with an extra espresso shot, dairy substitute or a dash of your favorite syrup.",
+		ContentTitle: "Customize your drink",
+	},
+	{
+		src: img50,
+		title: (
+			<span>
+				50<span className=" text-secondary-200 text-sm">&#9733;</span>
+			</span>
+		),
+		content:
+			"Pair coffee cake or an almond croissant with your fresh cup of hot brew.",
+		ContentTitle: "Brewed hot coffee, bakery item or hot tea",
+	},
+	{
+		src: img150,
+		title: (
+			<span>
+				150<span className=" text-secondary-200 text-sm">&#9733;</span>
+			</span>
+		),
+		content:
+			"Have a really good morning with a breakfast sandwich, oatmeal or your favorite drink.",
+		ContentTitle: "Handcrafted drink, hot breakfast or parfait",
+	},
+	{
+		src: img200,
+		title: (
+			<span>
+				200<span className=" text-secondary-200 text-sm">&#9733;</span>
+			</span>
+		),
+		content:
+			"Nourish your day with a hearty Chipotle Chicken Wrap or Eggs & Cheese Protein Box.",
+		ContentTitle: "Salad, sandwich or protein box",
+	},
+	{
+		src: img400,
+		title: (
+			<span>
+				400<span className=" text-secondary-200 text-sm">&#9733;</span>
+			</span>
+		),
+		content:
+			"Take home a signature cup, a bag of coffee or your choice of select coffee accessories.",
+		ContentTitle: "Select merchandise or at-home coffee",
+	},
+];
 
 const CardSection: React.FC<Props> = (props) => {
 	return (
 		<section>
-			<div className=" bg-primary-100 pt-12">
-				<div className="md:max-w-xl md:m-auto">
-					<H1>Get your favorites for free</H1>
-					<div className="flex justify-around items-start text-center mt-4 md:mt-12">
-						<TabHeading className="w-full">
-							25<span className=" text-secondary-200">&#9733;</span>
-						</TabHeading>
-						<TabHeading className="w-full">
-							50<span className=" text-secondary-200">&#9733;</span>
-						</TabHeading>
-						<TabHeading className="w-full border-b-4 pb-4 border-primary-300">
-							150<span className=" text-secondary-200">&#9733;</span>
-						</TabHeading>
-						<TabHeading className="w-full">
-							200<span className=" text-secondary-200">&#9733;</span>
-						</TabHeading>
-						<TabHeading className="w-full">
-							400<span className=" text-secondary-200">&#9733;</span>
-						</TabHeading>
-					</div>
-				</div>
-			</div>
-			<div className=" bg-primary-200 text-center px-4 py-8">
-				<div className="md:max-w-2xl md:m-auto md:flex">
-					<img className="md:max-h-52" src={img150} alt=""></img>
-					<Content
-						title="Handcrafted drink, hot breakfast or parfait"
-						className="mt-4 md:ml-6 text-center md:text-left"
-					>
-						Have a really good morning with a breakfast sandwich, oatmeal or
-						your favorite drink.
-					</Content>
-				</div>
-			</div>
+			<Tabs>
+				{tabContent.map((tab) => (
+					<Tab title={tab.title}>
+						<TabContent
+							title={tab.ContentTitle}
+							src={tab.src}
+							desc={tab.content}
+						/>
+					</Tab>
+				))}
+			</Tabs>
 		</section>
 	);
 };

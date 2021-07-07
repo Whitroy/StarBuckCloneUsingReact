@@ -14,7 +14,7 @@ const Nav: React.FC<Props> = (props) => {
 
 	return (
 		<>
-			<nav className=" relative z-30 flex justify-between items-center p-4 md:px-8 md:pb-0 md:pt-2 md:justify-start bg-white shadow-md w-full pr-6">
+			<nav className=" relative z-30 flex justify-between items-center p-4 md:px-8 md:pb-0 md:pt-2 md:justify-start bg-white shadow-md w-full pr-6 md:sticky md:top-0">
 				<StarbuckIcon className="w-10 h-10 md:w-14 md:h-14" />
 				<button
 					className="w-6 h-6 md:hidden"
@@ -57,8 +57,16 @@ const Nav: React.FC<Props> = (props) => {
 						>
 							GIFT CARDS
 						</HoverLink>
+						<HoverLink
+							className="ml-4"
+							routing={true}
+							to="/dialog"
+							activeClassName="border-b-8 border-primary-300 h-14"
+						>
+							DIALOG DEMO
+						</HoverLink>
 					</div>
-					<div className="flex justify-center items-center">
+					<div className="flex justify-center items-center flex-shrink-0">
 						<HoverLink href="#" className=" text-sm block ">
 							<LocationMarkerIcon className="w-7 h-7 inline-block mr-1" />
 							Find a store

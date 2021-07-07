@@ -21,28 +21,22 @@ const ImgSection: React.FC<Props> = (props) => {
 			</P>
 			<div className="md:flex md:justify-around md:items-start md:mt-5 md:px-8">
 				<InfoBlock step={FunFrebies} type="Img" title="Fun freebies">
-					<P>
-						Not only can you earn free coffee, look forward to a birthday treat
-						plus coffee and tea refills.
-					</P>
+					Not only can you earn free coffee, look forward to a birthday treat
+					plus coffee and tea refills.
 					<TextLink color="Green" href="#" className="block mt-4">
 						Learn More
 					</TextLink>
 				</InfoBlock>
 				<InfoBlock step={OrderPay} type="Img" title="Order & pay ahead">
-					<P>
-						Enjoy the convenience of in-store, curbside or drive-thru pickup at
-						select stores.
-					</P>
+					Enjoy the convenience of in-store, curbside or drive-thru pickup at
+					select stores.
 					<TextLink color="Green" href="#" className="block mt-4">
 						Learn More
 					</TextLink>
 				</InfoBlock>
 				<InfoBlock step={GetFree} type="Img" title="Get to free faster">
-					<P>
-						Earn Stars even quicker with Bonus Star challenges, Double Star Days
-						and exciting games.
-					</P>
+					Earn Stars even quicker with Bonus Star challenges, Double Star Days
+					and exciting games.
 					<TextLink color="Green" href="#" className="block mt-4">
 						Learn More
 					</TextLink>

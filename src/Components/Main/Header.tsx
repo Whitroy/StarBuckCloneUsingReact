@@ -5,7 +5,7 @@ interface Props {}
 
 const Header: React.FC<Props> = (props) => {
 	return (
-		<header className=" bg-primary-400 px-4 py-2 text-sm flex justify-between items-center sticky top-0 z-10">
+		<header className=" bg-primary-400 px-4 py-2 text-sm flex justify-between items-center sticky top-0 z-10 md:top-24">
 			<P color="white" className="font-extrabold md:max-w-md md:ml-20 md:py-1">
 				STARBUCKS&#174; REWARDS
 			</P>

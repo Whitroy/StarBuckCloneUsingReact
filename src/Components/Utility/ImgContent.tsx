@@ -11,7 +11,7 @@ const ImgContent: React.FC<Props> = (props) => {
 		<div className={props.className + " flex"}>
 			<img src={props.src} alt="" className=" h-40"></img>
 			<Content title={props.title} className=" ml-6 mt-0 md:max-w-sm">
-				{props.children}
+				{[props.children]}
 			</Content>
 		</div>
 	);

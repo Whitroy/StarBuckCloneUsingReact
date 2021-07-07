@@ -9,9 +9,9 @@ const ListCard: React.FC<Props> = (props) => {
 	const datum = props.data;
 	let tags: any[] = [];
 
-	datum.forEach((data) => {
+	datum.forEach((data, index) => {
 		tags.push(
-			<a className="mt-5 text-gray-400 hover:text-black" href="#">
+			<a className="mt-5 text-gray-400 hover:text-black" href="#" key={index}>
 				{data}
 			</a>
 		);

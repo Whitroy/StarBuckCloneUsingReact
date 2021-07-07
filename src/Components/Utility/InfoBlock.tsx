@@ -26,7 +26,7 @@ const InfoBlock: React.FC<Props> = (props) => {
 			{blockStart}
 			<div className="flex flex-col items-start mx-4 md:mt-6 md:items-center md:text-center">
 				<Content title={props.title} className="md:mt-5 ">
-					{props.children}
+					{[props.children]}
 				</Content>
 			</div>
 		</div>
