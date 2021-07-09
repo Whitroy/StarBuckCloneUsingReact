@@ -14,7 +14,7 @@ const Tabs: React.FC<Props> = ({ children }) => {
 		<>
 			<div className=" bg-primary-100 pt-12">
 				<H1>Get your favorites for free</H1>
-				<div className="relative max-w-md mx-auto pb-1">
+				<div className="max-w-md mx-auto ">
 					<div className="flex text-xl font-bold">
 						{children.map((child, index) => (
 							<div
@@ -26,15 +26,15 @@ const Tabs: React.FC<Props> = ({ children }) => {
 						))}
 					</div>
 					<div
-						className="absolute h-1 bg-primary-300 ease-in-out transform-transition duration-300"
+						className="h-1 bg-primary-300 ease-in-out transform-transition duration-300"
 						style={{
 							width: tabWidth + "%",
-							left: selectedTab * tabWidth + "%",
+							transform: `translateX(${100 * selectedTab}%)`,
 						}}
 					></div>
 				</div>
 			</div>
-			<div className="bg-primary-200  pb-96 md:pb-72">
+			<div className="bg-primary-200 flex overflow-x-hidden">
 				{children.map((child, index) => (
 					<Transition
 						show={index === selectedTab}
@@ -47,7 +47,7 @@ const Tabs: React.FC<Props> = ({ children }) => {
 						leaveFrom="opacity-100"
 						leaveTo="opacity-0"
 					>
-						<div className="absolute">{child}</div>
+						<div className="flex-none w-full">{child}</div>
 					</Transition>
 				))}
 			</div>

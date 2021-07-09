@@ -12,23 +12,46 @@ const Nav: React.FC<Props> = (props) => {
 	const [isMenuOpen, SetMenuOpen] = useState(false);
 	const [isAnimating, SetIsAnimating] = useState(false);
 
+	const navWidth = isMenuOpen ? "103%" : "100%";
+
 	return (
 		<>
-			<nav className=" relative z-30 flex justify-between items-center p-4 md:px-8 md:pb-0 md:pt-2 md:justify-start bg-white shadow-md w-full pr-6 md:sticky md:top-0">
+			<nav
+				className=" relative z-30 flex justify-between items-center p-4 md:px-8 md:pb-0 md:pt-2 md:justify-start bg-white shadow-md pr-6 md:sticky md:top-0"
+				style={{ width: navWidth }}
+			>
 				<StarbuckIcon className="w-10 h-10 md:w-14 md:h-14" />
 				<button
-					className="w-6 h-6 md:hidden"
+					className="w-6 h-6 md:hidden relative"
 					onClick={() => {
 						if (!isAnimating) {
 							SetMenuOpen(true);
 						}
 					}}
 				>
-					<Transition show={!isMenuOpen}>
-						<MenuIcon />
+					<Transition
+						show={!isMenuOpen}
+						enter="transition-opacity duration-300 "
+						enterFrom="opacity-0"
+						enterTo="opacity-50"
+						entered="opacity-50"
+						leave="transition-opacity duration-300 "
+						leaveFrom="opacity-50"
+						leaveTo="opacity-0"
+					>
+						<MenuIcon className="absolute inset-0" />
 					</Transition>
-					<Transition show={isMenuOpen}>
-						<XIcon />
+					<Transition
+						show={isMenuOpen}
+						enter="transition-opacity transition-tansform duration-300 "
+						enterFrom="opacity-0 rotate-90"
+						enterTo="opacity-50 rotate-0"
+						entered="opacity-50"
+						leave="transition-opacity transition-transform duration-300 "
+						leaveFrom="opacity-50 rotate-0"
+						leaveTo="opacity-0 rotate-90"
+					>
+						<XIcon className="absolute inset-0 transform" />
 					</Transition>
 				</button>
 				<div className="hidden md:flex md:justify-between md:w-full md:items-center">
@@ -107,7 +130,9 @@ const Nav: React.FC<Props> = (props) => {
 							}
 						>
 							<ul className="text-2xl space-y-5">
-								<li>Menu</li>
+								<li>
+									<a href="#">Menu</a>
+								</li>
 								<li>Rewards</li>
 								<li>Gift Cards</li>
 							</ul>
