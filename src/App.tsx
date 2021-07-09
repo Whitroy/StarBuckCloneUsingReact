@@ -12,23 +12,27 @@ import PageNotFound from "./Components/Main/PageNotFound";
 import ConfirmationDialog from "./Components/Utility/ConfirmationDialog";
 
 import { useState } from "react";
+import AssginmentList from "./Components/Main/AssginmentList";
 
 function App() {
 	const [isShowing, SetIsShowing] = useState(false);
 	return (
 		<div className=" font-sans">
 			<Router>
-				<Nav />
 				<Switch>
-					<Redirect from="/" to="/rewards" exact />
+					<Redirect from="/" to="/assigments" exact />
 					<Route path="/rewards">
+						<Nav />
 						<Reward />
+						<Footer />
 					</Route>
-					<Route path="/gifts">
+					<Route path="/gift">
+						<Nav />
 						<Gift />
+						<Footer />
 					</Route>
 					<Route path="/dialog">
-						<div className="p-6 m-auto text-center space-y-5 bg-red-100">
+						<div className="p-6 m-auto text-center space-y-5 bg-red-100 max-w-2xl shadow-lg rounded-md mt-36">
 							<h1 className="text-2xl font-bold">Dialog Demo Section</h1>
 							<button
 								className=" bg-primary-300 rounded-xl px-4 py-1.5 font-bold  text-white shadow-xl hover:bg-red-400"
@@ -45,11 +49,13 @@ function App() {
 							open={isShowing}
 						/>
 					</Route>
+					<Route path="/assigments">
+						<AssginmentList />
+					</Route>
 					<Route>
 						<PageNotFound />
 					</Route>
 				</Switch>
-				<Footer />
 			</Router>
 		</div>
 	);

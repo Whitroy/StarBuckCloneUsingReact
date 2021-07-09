@@ -3,6 +3,7 @@ import H1 from "../Utility/H1";
 import P from "../Utility/P";
 import TextLink from "../Utility/TextLink";
 import Content from "../Utility/Content";
+import { Transition } from "@headlessui/react";
 
 interface Props {}
 
@@ -18,11 +19,13 @@ const SubmitSection: React.FC<Props> = (props) => {
 					add Stars to your account.
 				</P>
 				<form className="mt-5 ">
-					<input
-						type="text"
-						placeholder="Enter your Star Code"
-						className="p-3 border-2 border-gray-400 rounded-xl w-full focus:outline-none focus:border-primary-300 "
-					></input>
+					<div className="relative">
+						<input
+							type="text"
+							className="p-3 border-2 border-gray-400 rounded-xl w-full focus:outline-none focus:border-primary-300 "
+						></input>
+						<p className="absolute top-3.5 left-3.5">Enter your Star Code</p>
+					</div>
 					<div className="ml-auto w-20">
 						<button
 							type="submit"

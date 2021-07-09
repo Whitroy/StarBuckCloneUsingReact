@@ -14,7 +14,7 @@ const HoverLink: React.FC<Props> = ({
 	routing,
 	...rest
 }) => {
-	let tag: any;
+	let tag: React.ReactElement;
 
 	const classes: string = "hover:text-primary-300 font-bold ";
 

@@ -75,18 +75,10 @@ const Nav: React.FC<Props> = (props) => {
 						<HoverLink
 							className="ml-4"
 							routing={true}
-							to="/gifts"
+							to="/gift"
 							activeClassName="border-b-8 border-primary-300 h-14"
 						>
 							GIFT CARDS
-						</HoverLink>
-						<HoverLink
-							className="ml-4"
-							routing={true}
-							to="/dialog"
-							activeClassName="border-b-8 border-primary-300 h-14"
-						>
-							DIALOG DEMO
 						</HoverLink>
 					</div>
 					<div className="flex justify-center items-center flex-shrink-0">
