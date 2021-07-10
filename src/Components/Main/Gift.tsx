@@ -1,7 +1,6 @@
 import React from "react";
 import Card from "../GiftPage/Card";
 import CardCollection from "../GiftPage/CardCollection";
-import CardHolder from "../GiftPage/CardHolder";
 import H2 from "../Utility/H2";
 import P from "../Utility/P";
 import RoundLink from "../Utility/RoundLink";
@@ -12,14 +11,14 @@ const Gift: React.FC<Props> = (props) => {
 	return (
 		<>
 			<CardCollection title="FEATURED" className="mt-8 md:ml-20">
-				<CardHolder src="" href="#"></CardHolder>
-				<CardHolder src="" href="#"></CardHolder>
-				<CardHolder src="" href="#"></CardHolder>
-				<CardHolder src="" href="#"></CardHolder>
-				<CardHolder src="" href="#"></CardHolder>
-				<CardHolder src="" href="#"></CardHolder>
-				<CardHolder src="" href="#"></CardHolder>
-				<CardHolder src="" href="#"></CardHolder>
+				<Card src="" href="#"></Card>
+				<Card src="" href="#"></Card>
+				<Card src="" href="#"></Card>
+				<Card src="" href="#"></Card>
+				<Card src="" href="#"></Card>
+				<Card src="" href="#"></Card>
+				<Card src="" href="#"></Card>
+				<Card src="" href="#"></Card>
 			</CardCollection>
 			<section className="bg-primary-200 p-8 md:pl-24 flex items-center justify-start mt-6">
 				<H2 textSize="XL">Got a gift card?</H2>
@@ -34,44 +33,44 @@ const Gift: React.FC<Props> = (props) => {
 				</RoundLink>
 			</section>
 			<CardCollection title="FEATURED" className="mt-8 md:ml-20">
-				<CardHolder src="" href="#"></CardHolder>
-				<CardHolder src="" href="#"></CardHolder>
-				<CardHolder src="" href="#"></CardHolder>
-				<CardHolder src="" href="#"></CardHolder>
-				<CardHolder src="" href="#"></CardHolder>
-				<CardHolder src="" href="#"></CardHolder>
-				<CardHolder src="" href="#"></CardHolder>
-				<CardHolder src="" href="#"></CardHolder>
+				<Card src="" href="#"></Card>
+				<Card src="" href="#"></Card>
+				<Card src="" href="#"></Card>
+				<Card src="" href="#"></Card>
+				<Card src="" href="#"></Card>
+				<Card src="" href="#"></Card>
+				<Card src="" href="#"></Card>
+				<Card src="" href="#"></Card>
 			</CardCollection>
 			<CardCollection title="FEATURED" className="mt-8 md:ml-20">
-				<CardHolder src="" href="#"></CardHolder>
-				<CardHolder src="" href="#"></CardHolder>
-				<CardHolder src="" href="#"></CardHolder>
-				<CardHolder src="" href="#"></CardHolder>
-				<CardHolder src="" href="#"></CardHolder>
-				<CardHolder src="" href="#"></CardHolder>
-				<CardHolder src="" href="#"></CardHolder>
-				<CardHolder src="" href="#"></CardHolder>
+				<Card src="" href="#"></Card>
+				<Card src="" href="#"></Card>
+				<Card src="" href="#"></Card>
+				<Card src="" href="#"></Card>
+				<Card src="" href="#"></Card>
+				<Card src="" href="#"></Card>
+				<Card src="" href="#"></Card>
+				<Card src="" href="#"></Card>
 			</CardCollection>
 			<CardCollection title="FEATURED" className="mt-8 md:ml-20">
-				<CardHolder src="" href="#"></CardHolder>
-				<CardHolder src="" href="#"></CardHolder>
-				<CardHolder src="" href="#"></CardHolder>
-				<CardHolder src="" href="#"></CardHolder>
-				<CardHolder src="" href="#"></CardHolder>
-				<CardHolder src="" href="#"></CardHolder>
-				<CardHolder src="" href="#"></CardHolder>
-				<CardHolder src="" href="#"></CardHolder>
+				<Card src="" href="#"></Card>
+				<Card src="" href="#"></Card>
+				<Card src="" href="#"></Card>
+				<Card src="" href="#"></Card>
+				<Card src="" href="#"></Card>
+				<Card src="" href="#"></Card>
+				<Card src="" href="#"></Card>
+				<Card src="" href="#"></Card>
 			</CardCollection>
 			<CardCollection title="FEATURED" className="mt-8 md:ml-20">
-				<CardHolder src="" href="#"></CardHolder>
-				<CardHolder src="" href="#"></CardHolder>
-				<CardHolder src="" href="#"></CardHolder>
-				<CardHolder src="" href="#"></CardHolder>
-				<CardHolder src="" href="#"></CardHolder>
-				<CardHolder src="" href="#"></CardHolder>
-				<CardHolder src="" href="#"></CardHolder>
-				<CardHolder src="" href="#"></CardHolder>
+				<Card src="" href="#"></Card>
+				<Card src="" href="#"></Card>
+				<Card src="" href="#"></Card>
+				<Card src="" href="#"></Card>
+				<Card src="" href="#"></Card>
+				<Card src="" href="#"></Card>
+				<Card src="" href="#"></Card>
+				<Card src="" href="#"></Card>
 			</CardCollection>
 		</>
 	);
