@@ -14,6 +14,9 @@ const AssginmentList: React.FC<Props> = (props) => {
 			<RoundLink color="Green" routing={true} to="/dialog">
 				Confirmation Dialog
 			</RoundLink>
+			<RoundLink color="Black" routing={true} to="/userlist">
+				User List
+			</RoundLink>
 		</div>
 	);
 };

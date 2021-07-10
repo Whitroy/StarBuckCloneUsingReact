@@ -10,6 +10,7 @@ module.exports = {
       white: color.white,
       gray: color.gray,
       red: color.red,
+      yellow: color.yellow,
 
       primary: {
         '100': '#f1f8f6',

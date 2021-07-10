@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import H2 from "../Utility/H2";
 import { ChevronDownIcon } from "@heroicons/react/outline";
-import { Transition } from "@headlessui/react";
-
 interface Props {
 	title: string;
 	data: string[];

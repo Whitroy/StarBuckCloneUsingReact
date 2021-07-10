@@ -3,7 +3,6 @@ import H1 from "../Utility/H1";
 import P from "../Utility/P";
 import TextLink from "../Utility/TextLink";
 import Content from "../Utility/Content";
-import { Transition } from "@headlessui/react";
 
 interface Props {}
 

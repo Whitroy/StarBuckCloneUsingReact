@@ -13,6 +13,7 @@ import ConfirmationDialog from "./Components/Utility/ConfirmationDialog";
 
 import { useState } from "react";
 import AssginmentList from "./Components/Main/AssginmentList";
+import Users from "./Components/Main/Users";
 
 function App() {
 	const [isShowing, SetIsShowing] = useState(false);
@@ -51,6 +52,9 @@ function App() {
 					</Route>
 					<Route path="/assigments">
 						<AssginmentList />
+					</Route>
+					<Route path="/userlist">
+						<Users />
 					</Route>
 					<Route>
 						<PageNotFound />
